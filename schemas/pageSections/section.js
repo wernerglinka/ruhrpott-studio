@@ -146,9 +146,9 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'section',
+      name: 'sectionBlocks',
       type: 'array',
-      title: 'Section',
+      title: 'Section Blocks',
       description: 'Add, edit, and reorder section blocks',
       of: [
         defineArrayMember({ type: 'textBlock' }),

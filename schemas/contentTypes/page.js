@@ -31,6 +31,19 @@ export default defineType({
       initialValue: true,
     }),
     defineField({
+      name: "layout",
+      title: "Page Template",
+      type: "string",
+      description: 'Select a page template',
+      options: {
+        list: [
+          { title: "Sections", value: "sections" },
+          { title: "Simple", value: "simple" },
+        ],
+      },
+      initialValue: "sections",
+    }),
+    defineField({
       name: 'title',
       type: 'string',
       title: 'Page Title',
