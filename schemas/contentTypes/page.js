@@ -34,14 +34,8 @@ export default defineType({
       name: "layout",
       title: "Page Template",
       type: "string",
-      description: 'Select a page template',
-      options: {
-        list: [
-          { title: "Sections", value: "sections" },
-          { title: "Simple", value: "simple" },
-        ],
-      },
-      initialValue: "sections",
+      description: 'Type the name of the page template you want to use, including the file extension. For example: "sections.njk"',
+      initialValue: "sections.njk",
     }),
     defineField({
       name: 'title',
