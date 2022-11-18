@@ -9,4 +9,4 @@ import imageBlock from './sectionBlocks/imageBlock';
 import cta from './elements/cta';
 import simpleBlockContent from './elements/simpleBlockContent';
 
-export const schemaTypes = [post, author, category, blockContent, page, section, textBlock, imageBlock, simpleBlockContent, cta];
+export const schemaTypes = [page, section, textBlock, imageBlock, simpleBlockContent, cta];

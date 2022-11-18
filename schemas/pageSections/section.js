@@ -9,6 +9,16 @@ export default defineType({
   name: 'section',
   title: 'Section',
   type: 'object',
+  fieldsets: [
+    { 
+      name: 'sectionFields', 
+      title: 'Sections Fields',
+      options: {
+        collapsible: true,
+        collapsed: false
+      }
+    },
+  ],
   fields: [
     defineField({
       name: "sectionType",
@@ -21,37 +31,38 @@ export default defineType({
           { title: "Text", value: "text" },
         ],
       },
-      
+      fieldset: 'sectionFields',
     }),
     defineField({
       title: 'Disabled',
       name: 'disabled',
       type: 'boolean',
-      
+      initialValue: false,
+      fieldset: 'sectionFields',
     }),
     defineField({
       title: 'Container ID',
       name: 'containerId',
       type: 'string',
-      
+      fieldset: 'sectionFields',
     }),
     defineField({
       title: 'Container Class',
       name: 'containerClass',
       type: 'string',
-      
+      fieldset: 'sectionFields',
     }),
     defineField({
       title: 'In Container',
       name: 'inContainer',
       type: 'boolean',
-      
+      fieldset: 'sectionFields',
     }),
     defineField({ 
       title: 'Add Spacing',
       name: 'addSpacing',
       type: 'boolean',
-      
+      fieldset: 'sectionFields',
     }),
     defineField({
       title: 'Margin',
@@ -70,7 +81,7 @@ export default defineType({
         })
       ],
       hidden: ({ parent }) => !parent?.addSpacing,
-      
+      fieldset: 'sectionFields',
     }),
     defineField({
       title: 'Padding',
@@ -89,13 +100,13 @@ export default defineType({
         })
       ],
       hidden: ({ parent }) => !parent?.addSpacing,
-      
+      fieldset: 'sectionFields',
     }),
     defineField({
       title: 'Has Background',
       name: 'hasBackground',
       type: 'boolean',
-      
+      fieldset: 'sectionFields',
     }),
     defineField({
       title: 'Background',
@@ -119,7 +130,7 @@ export default defineType({
         })
       ],
       hidden: ({ parent }) => !parent.hasBackground,
-      
+      fieldset: 'sectionFields',
     }),
     defineField({
       name: "htmlTag",
