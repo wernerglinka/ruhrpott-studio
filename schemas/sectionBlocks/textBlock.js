@@ -36,9 +36,9 @@ export default defineType({
       title: 'Subtitle',
     }),
     defineField({
-      name: 'Body',
+      name: 'PortableTextBody',
       type: 'simpleBlockContent',
-      title: 'Body',
+      title: 'Portable Text Body',
     }),
   ],
 })
