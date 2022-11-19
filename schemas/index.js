@@ -6,7 +6,8 @@ import page from './contentTypes/page';
 import section from './pageSections/section';
 import textBlock from './sectionBlocks/textBlock';
 import imageBlock from './sectionBlocks/imageBlock';
+import mediaBlock from './sectionBlocks/mediaBlock';
 import cta from './elements/cta';
 import simpleBlockContent from './elements/simpleBlockContent';
 
-export const schemaTypes = [page, section, textBlock, imageBlock, simpleBlockContent, cta];
+export const schemaTypes = [page, section, textBlock, imageBlock, mediaBlock, simpleBlockContent, cta];

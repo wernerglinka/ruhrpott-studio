@@ -27,6 +27,8 @@ export default defineType({
       description: 'This is used to select the proper section styles',
       options: {
         list: [
+          { title: "Default", value: "default" },
+          { title: "Image", value: "image" },
           { title: "Media", value: "media" },
           { title: "Text", value: "text" },
         ],
@@ -151,8 +153,9 @@ export default defineType({
       title: 'Section Blocks',
       description: 'Add, edit, and reorder section blocks',
       of: [
-        { type: 'textBlock' },
         { type: 'imageBlock' },
+        { type: 'mediaBlock' },
+        { type: 'textBlock' },
       ]
     },
   ],

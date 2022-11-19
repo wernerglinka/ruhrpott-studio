@@ -23,14 +23,14 @@ export default defineType({
       name: 'externalLink',
       type: 'string',
       description: 'Example: https://www.sanity.io',
-      hidden: ({ parent }) => !parent.isExternal
+      //hidden: ({ parent }) => !parent.isExternal
     },
     {
       title: 'Internal link',
       name: 'internalLink',
       type: 'string',
       description: 'Example: /about',
-      hidden: ({ parent }) => parent.isExternal
+      //hidden: ({ parent }) => parent.isExternal
     },
     {
       title: 'Kind',
