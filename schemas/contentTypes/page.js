@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import {defineType} from 'sanity'
 
 import {FiFile} from "react-icons/fi";
 
@@ -19,51 +19,51 @@ export default defineType({
     },
   ],
   fields: [
-    defineField({
+    {
       name: 'discoverable',
       type: 'boolean',
       initialValue: true,
-    }),
-    defineField({
+    },
+    {
       name: 'isPage',
       type: 'boolean',
       description: 'set to FALSE for metadata',
       initialValue: true,
-    }),
-    defineField({
+    },
+    {
       name: "layout",
       title: "Page Template",
       type: "string",
       description: 'Type the name of the page template you want to use, including the file extension. For example: "sections.njk"',
       initialValue: "sections.njk",
-    }),
-    defineField({
+    },
+    {
       name: 'title',
       type: 'string',
       title: 'Page Title',
       fieldset: 'metadata',
-    }),
-    defineField({
+    },
+    {
       name: 'description',
       type: 'text',
       title: 'Page Description',
       fieldset: 'metadata',
-    }),
-    defineField({
+    },
+    {
       name: 'image',
       type: 'image',
       title: 'Page Image',
       description: 'This image will be used when sharing the page on social media',
       fieldset: 'metadata',
-    }),
-    defineField({
+    },
+    {
       name: 'canonicalUrl',
       type: 'url',
       title: 'Canonical URL',
       description: 'The canonical URL of the page',
       fieldset: 'metadata',
-    }),
-    defineField({
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -71,8 +71,8 @@ export default defineType({
         source: 'title',
         maxLength: 96
       }
-    }),
-    defineField({
+    },
+    {
       name: 'sections',
       type: 'array',
       title: 'Page Sections',
@@ -80,7 +80,7 @@ export default defineType({
       of: [
         { type: 'section' },
       ],
-    }),
+    },
   ],
   preview: {
     select: {

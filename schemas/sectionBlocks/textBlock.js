@@ -1,20 +1,20 @@
-import {defineField, defineType} from 'sanity'
+import {defineType} from 'sanity'
 
 export default defineType({
   name: 'textBlock',
   title: 'Text Block',
   type: 'object',
   fields: [
-    defineField({ name: 'titlePrefix', 
+    { name: 'titlePrefix', 
       type: 'string', 
       title: 'Title Prefix' 
-    }),
-    defineField({
+    },
+    {
       title: 'Title',
       name: 'title',
       type: 'string'
-    }),
-    defineField({
+    },
+    {
       name: "headerType",
       title: "Header Type",
       type: "string",
@@ -29,16 +29,21 @@ export default defineType({
           { title: "h6", value: "h6" },
         ]
       }
-    }),
-    defineField({
+    },
+    {
       name: 'subTitle',
       type: 'string',
       title: 'Subtitle',
-    }),
-    defineField({
+    },
+    {
       name: 'portableTextBody',
       type: 'simpleBlockContent',
       title: 'Portable Text Body',
-    }),
+    },
+    {
+      name: 'cta',
+      type: 'cta',
+      title: 'CTA',
+    },
   ],
 })
