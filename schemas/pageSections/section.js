@@ -126,6 +126,21 @@ export default defineType({
           type: 'image'
         },
         {
+          name: "cssBg",
+          title: "CSS Background",
+          type: "string",
+          description: 'Select a CSS background pattern',
+          options: {
+            list: [
+              { title: "Pattern1", value: "pattern1" },
+              { title: "Pattern2", value: "pattern2" },
+              { title: "Pattern3", value: "pattern3" },
+              { title: "Pattern4", value: "pattern4" },
+              { title: "Pattern5", value: "pattern5" },
+            ],
+          },
+        },
+        {
           title: 'Is Dark',
           name: 'isDark',
           type: 'boolean'

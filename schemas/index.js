@@ -1,13 +1,11 @@
-import blockContent from './blockContent';
-import category from './category';
-import post from './post';
-import author from './author';
-import page from './contentTypes/page';
-import section from './pageSections/section';
-import textBlock from './sectionBlocks/textBlock';
-import imageBlock from './sectionBlocks/imageBlock';
-import mediaBlock from './sectionBlocks/mediaBlock';
-import cta from './elements/cta';
-import simpleBlockContent from './elements/simpleBlockContent';
+import schemaContentTypes from './contentTypes';
+import schemaElements from './elements/index';
+import schemaPageSections from './pageSections/index';
+import schemaSectionBlocks from './sectionBlocks/index';
 
-export const schemaTypes = [page, section, textBlock, imageBlock, mediaBlock, simpleBlockContent, cta];
+export const schemaTypes = [
+  ...schemaContentTypes,
+  ...schemaElements,
+  ...schemaPageSections,
+  ...schemaSectionBlocks,
+];
