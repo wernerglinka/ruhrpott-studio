@@ -29,6 +29,7 @@ export default defineType({
         list: [
           { title: "Default", value: "default" },
           { title: "Image", value: "image" },
+          { title: "Image Slider", value: "imageSlider" },
           { title: "Media", value: "media" },
           { title: "Text", value: "text" },
         ],
@@ -171,6 +172,7 @@ export default defineType({
         { type: 'imageBlock' },
         { type: 'mediaBlock' },
         { type: 'textBlock' },
+        { type: 'imageSliderBlock' },
       ]
     },
   ],
