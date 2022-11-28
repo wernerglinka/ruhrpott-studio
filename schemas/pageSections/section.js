@@ -27,6 +27,7 @@ export default defineType({
       description: 'This is used to select the proper section styles',
       options: {
         list: [
+          { title: "Cities List", value: "citiesList" },
           { title: "Default", value: "default" },
           { title: "Image", value: "image" },
           { title: "Image Slider", value: "imageSlider" },
@@ -170,11 +171,12 @@ export default defineType({
       title: 'Section Blocks',
       description: 'Add, edit, and reorder section blocks',
       of: [
+        { type: 'citiesListBlock' },
         { type: 'imageBlock' },
-        { type: 'mediaBlock' },
-        { type: 'textBlock' },
         { type: 'imageSliderBlock' },
         { type: 'logosListBlock' },
+        { type: 'mediaBlock' },
+        { type: 'textBlock' }, 
       ]
     },
   ],

@@ -1,3 +1,4 @@
+import citiesListBlock from './citiesListBlock';
 import imageBlock from './imageBlock';
 import imageSliderBlock from './imageSliderBlock';
 import logosListBlock from './logosListBlock';
@@ -6,7 +7,8 @@ import textBlock from './textBlock';
 
 
 const schemaSectionBlocks = [
-  imageBlock, 
+  citiesListBlock,
+  imageBlock,
   imageSliderBlock, 
   logosListBlock, 
   mediaBlock, 
