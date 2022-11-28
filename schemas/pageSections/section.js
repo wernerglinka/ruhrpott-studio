@@ -30,6 +30,7 @@ export default defineType({
           { title: "Default", value: "default" },
           { title: "Image", value: "image" },
           { title: "Image Slider", value: "imageSlider" },
+          { title: "Logos List", value: "logosList" },
           { title: "Media", value: "media" },
           { title: "Text", value: "text" },
         ],
@@ -173,6 +174,7 @@ export default defineType({
         { type: 'mediaBlock' },
         { type: 'textBlock' },
         { type: 'imageSliderBlock' },
+        { type: 'logosListBlock' },
       ]
     },
   ],

@@ -5,6 +5,18 @@ export default defineType({
   title: 'Media Block',
   type: 'object',
   fields: [
+    {
+      name: 'blockOrder',
+      title: 'Block Order',
+      type: 'string',
+      options: {
+        list: [
+          { title: "Image Right", value: "imageRight" },
+          { title: "Image Left", value: "imageLeft" },
+        ]
+      },
+      initialValue: "imageRight",
+    },
     { name: 'titlePrefix', 
       type: 'string', 
       title: 'Title Prefix' 
@@ -28,7 +40,8 @@ export default defineType({
           { title: "h5", value: "h5" },
           { title: "h6", value: "h6" },
         ]
-      }
+      },
+      initialValue: "h2",
     },
     {
       name: 'subTitle',
