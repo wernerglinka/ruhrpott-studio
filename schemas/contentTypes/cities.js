@@ -1,4 +1,4 @@
-import {defineType} from 'sanity'
+import {defineType} from 'sanity';
 import {FiGlobe} from "react-icons/fi";
 
 export default defineType({
@@ -20,7 +20,16 @@ export default defineType({
     { 
       name: 'size',
       title: 'Size',
-      type: 'number'
+      type: 'string',
+      options: {
+        list: [
+          { title: "Greater then One Hundred Thousand", value: "one" },
+          { title: "Greater then Two Hundred Thousand", value: "two" },
+          { title: "Greater then Three Hundred Thousand", value: "three" },
+          { title: "Greater then Four Hundred Thousand", value: "four" },
+          { title: "Greater then Five Hundred Thousand", value: "five" },
+        ],
+      },
     },
     {
       name: 'image',
