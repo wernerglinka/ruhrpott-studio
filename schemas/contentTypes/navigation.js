@@ -24,9 +24,9 @@ export default defineType({
     },
     {
       type: 'array',
-      name: 'sections',
-      title: 'Sections',
-      of: [{ type: 'navigation.section' }],
+      name: 'menuLinks',
+      title: 'Menu Links',
+      of: [{ type: `menuLink` }],
     },
   ],
 });

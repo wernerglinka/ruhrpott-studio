@@ -34,6 +34,7 @@ export default defineType({
           { title: "Logos List", value: "logosList" },
           { title: "Media", value: "media" },
           { title: "Text", value: "text" },
+          { title: "Video", value: "video" },
         ],
       },
       fieldset: 'sectionFields',
@@ -176,7 +177,8 @@ export default defineType({
         { type: 'imageSliderBlock' },
         { type: 'logosListBlock' },
         { type: 'mediaBlock' },
-        { type: 'textBlock' }, 
+        { type: 'textBlock' },
+        { type: 'videoBlock' },
       ]
     },
   ],

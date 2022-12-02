@@ -4,6 +4,7 @@ import imageSliderBlock from './imageSliderBlock';
 import logosListBlock from './logosListBlock';
 import mediaBlock from './mediaBlock';
 import textBlock from './textBlock';
+import videoBlock from './videoBlock';
 
 
 const schemaSectionBlocks = [
@@ -12,6 +13,8 @@ const schemaSectionBlocks = [
   imageSliderBlock, 
   logosListBlock, 
   mediaBlock, 
-  textBlock];
+  textBlock,
+  videoBlock
+];
 
 export default schemaSectionBlocks;
