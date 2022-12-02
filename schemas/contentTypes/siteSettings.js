@@ -1,6 +1,7 @@
+import {defineType} from 'sanity';
 import {FiSettings} from "react-icons/fi";
 
-export default {
+export default defineType({
   name: 'siteSettings',
   title: 'Site Settings',
   icon: FiSettings,
@@ -136,4 +137,4 @@ export default {
       };
     },
   }
-}
+});
