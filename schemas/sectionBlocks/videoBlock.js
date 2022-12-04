@@ -6,7 +6,7 @@ export default defineType({
   type: 'object',
   fields: [
     {
-      name: "videoSorce",
+      name: "videoSource",
       title: "Video Source",
       type: "string",
       description: 'Select a Video Source',
@@ -20,6 +20,12 @@ export default defineType({
       name: 'videoID',
       type: 'string',
       title: 'Video ID',
+    },
+    {
+      title: 'Start Time',
+      name: 'startTime',
+      type: 'number',
+      description: 'Start time in seconds',
     },
     {
       name: 'videoThumbnail',
