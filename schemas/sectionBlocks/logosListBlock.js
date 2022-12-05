@@ -32,33 +32,9 @@ export default defineType({
       type: 'string'
     },
     {
-      title: 'Desctiption',
-      name: 'description',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          lists: [{title: 'Bullet', value: 'bullet'}],
-          marks: {
-            decorators: [{title: 'Strong', value: 'strong'}, {title: 'Emphasis', value: 'em'}],
-            annotations: [
-              {
-                title: 'URL',
-                name: 'link',
-                type: 'object',
-                fields: [
-                  {
-                    title: 'URL',
-                    name: 'href',
-                    type: 'url'
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
+      name: 'portableTextBody',
+      type: 'simpleBlockContent',
+      title: 'Portable Text Body',
     },
     {
       name: "listSource",
@@ -115,6 +91,11 @@ export default defineType({
         }
       ],
       hidden: ({ parent }) => parent?.listSource !== 'footballClubs'
+    },
+    {
+      name: 'hint',
+      title: 'Hint',
+      type: 'string'
     },
     {
       name: 'cta',
