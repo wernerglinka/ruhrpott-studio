@@ -27,6 +27,8 @@ export default defineType({
       description: 'This is used to select the proper section styles',
       options: {
         list: [
+          { title: "Blog Post Header", value: "blogPostHeader" },
+          { title: "Blog Post Content", value: "blogPostContent" },
           { title: "Cities List", value: "citiesList" },
           { title: "Default", value: "default" },
           { title: "Image", value: "image" },
@@ -172,6 +174,8 @@ export default defineType({
       title: 'Section Blocks',
       description: 'Add, edit, and reorder section blocks',
       of: [
+        { type: 'blogContentBlock' },
+        { type: 'blogHeaderBlock' },
         { type: 'citiesListBlock' },
         { type: 'imageBlock' },
         { type: 'imageSliderBlock' },

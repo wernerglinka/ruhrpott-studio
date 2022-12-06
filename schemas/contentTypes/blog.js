@@ -1,7 +1,8 @@
+import {defineType} from 'sanity';
 import {FiFileText} from "react-icons/fi";
 import { format } from 'date-fns'
 
-export default {
+export default defineType({
   name: 'blog',
   title: 'Blog Posts',
   type: 'document',
@@ -27,6 +28,13 @@ export default {
       type: 'boolean',
       description: 'set to FALSE for metadata',
       initialValue: true,
+    },
+    {
+      name: "layout",
+      title: "Page Template",
+      type: "string",
+      description: 'Type the name of the page template you want to use, including the file extension. For example: "sections.njk"',
+      initialValue: "sections.njk",
     },
     {
       name: 'title',
@@ -102,7 +110,12 @@ export default {
       },
     },
     {
-      name: 'content',
+      name: 'portableTextBody',
+      type: 'simpleBlockContent',
+      title: 'Excerpt',
+    },
+    {
+      name: 'sections',
       type: 'array',
       title: 'Page sections',
       description: 'Add, edit, and reorder sections',
@@ -126,4 +139,4 @@ export default {
       })
     }
   }
-}
+});

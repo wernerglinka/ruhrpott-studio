@@ -1,6 +1,7 @@
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {schemaTypes} from './schemas'
+import {defineConfig} from 'sanity';
+import {deskTool} from 'sanity/desk';
+import {schemaTypes} from './schemas';
+import {codeInput} from '@sanity/code-input';
 
 const singleEdits = [
   { type: 'siteSettings' },
@@ -12,7 +13,10 @@ export default defineConfig({
   title: 'ruhrpott-studio',
   projectId: '349a1vg2',
   dataset: 'production',
-  plugins: [deskTool()],
+  plugins: [
+    deskTool(),
+    codeInput()
+  ],
   schema: {
     types: schemaTypes,
   },
