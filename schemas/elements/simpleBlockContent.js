@@ -59,7 +59,6 @@ export default defineType({
                     scheme: ["http", "https", "mailto", "tel"],
                     allowRelative: true,
                   }),
-                  
                 ],
               },
             ],
