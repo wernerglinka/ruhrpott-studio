@@ -8,7 +8,6 @@ export default {
       type: 'string',
       title: 'Link Label',
     },
-
     {
       name: 'isExternal',
       title: 'Link is External',
@@ -19,7 +18,9 @@ export default {
       name: 'href',
       type: 'url',
       validation: Rule => Rule.uri({
-        scheme: ['http', 'https', 'mailto', 'tel']
+        allowRelative: true, // Allow relative links
+        relativeOnly: false, // Force only relative links
+        scheme: ['http', 'https', 'mailto', 'tel'],
       })
     }
   ]
