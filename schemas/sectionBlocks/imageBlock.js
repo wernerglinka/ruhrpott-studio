@@ -10,6 +10,11 @@ export default defineType({
       title: 'Alt Text' 
     },
     {
+      title: 'Image ID',
+      name: 'imageId',
+      type: 'string'
+    },
+    {
       title: 'Caption',
       name: 'caption',
       type: 'string'
