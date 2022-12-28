@@ -1,12 +1,12 @@
 import {defineType} from 'sanity';
-import {FiFileText} from "react-icons/fi";
+import {FiLayers} from "react-icons/fi";
 import { format } from 'date-fns'
 
 export default defineType({
   name: 'blog',
   title: 'Blog Posts',
   type: 'document',
-  icon: FiFileText,
+  icon: FiLayers,
   fieldsets: [
     { 
       name: 'metadata', 
