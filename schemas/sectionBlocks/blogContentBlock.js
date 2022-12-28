@@ -70,6 +70,11 @@ export default defineType({
               title: 'Alternative Text',
               name: 'alt',
               type: 'string'
+            },
+            {
+              title: 'Image ID',
+              name: 'imageId',
+              type: 'string'
             }
           ]    
         },
