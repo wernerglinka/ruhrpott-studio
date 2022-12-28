@@ -5,7 +5,7 @@ import {FiFile} from "react-icons/fi";
 
 export default defineType({
   name: 'page',
-  title: 'Page',
+  title: 'Pages',
   icon: FiFile,
   type: 'document',
   fieldsets: [

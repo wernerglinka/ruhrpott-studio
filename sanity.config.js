@@ -1,5 +1,6 @@
 import {defineConfig} from 'sanity';
 import {deskTool} from 'sanity/desk';
+import { ruhrpottStructure } from './deskStructure';
 import {schemaTypes} from './schemas';
 import {codeInput} from '@sanity/code-input';
 import { dashboardTool } from "@sanity/dashboard";
@@ -16,7 +17,9 @@ export default defineConfig({
   projectId: '349a1vg2',
   dataset: 'production',
   plugins: [
-    deskTool(),
+    deskTool({
+      structure: ruhrpottStructure,
+    }),
     codeInput(),
     dashboardTool({
       widgets: [
@@ -43,15 +46,5 @@ export default defineConfig({
   ],
   schema: {
     types: schemaTypes,
-  },
-  document: {
-    newDocumentOptions: (prev, context) =>
-      prev.filter(document => !singleEdits.includes(document.templateId)),
-    actions: (prev, { schemaType }) => {
-      if (singleEdits.includes(schemaType)) {
-        return prev.filter(prevAction => prevAction.action == 'publish');
-      }
-      return prev;
-    },
   },
 });
