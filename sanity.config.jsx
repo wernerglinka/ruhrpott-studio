@@ -6,11 +6,6 @@ import {codeInput} from '@sanity/code-input';
 import { dashboardTool } from "@sanity/dashboard";
 import { netlifyWidget } from "sanity-plugin-dashboard-widget-netlify";
 
-const singleEdits = [
-  { type: 'siteSettings' },
-  { type: 'navigations' },
-] 
-
 export default defineConfig({
   name: 'default',
   title: 'ruhrpott-studio',
