@@ -1,10 +1,30 @@
-import {defineConfig} from 'sanity';
-import {deskTool} from 'sanity/desk';
+import { defineConfig } from 'sanity';
+import { deskTool } from 'sanity/desk';
 import { ruhrpottStructure } from './deskStructure';
-import {schemaTypes} from './schemas';
-import {codeInput} from '@sanity/code-input';
+import { schemaTypes } from './schemas';
+import { codeInput } from '@sanity/code-input';
 import { dashboardTool } from "@sanity/dashboard";
 import { netlifyWidget } from "sanity-plugin-dashboard-widget-netlify";
+import {Card, Text} from '@sanity/ui';
+import { useLayoutEffect } from 'react';
+import { FiHome } from 'react-icons/fi';
+
+const returnHomeTool = () => {
+  return {
+    title: 'Return Home',
+    name: 'home', // localhost:3333/my-custom-tool
+    icon: FiHome,
+    component: (props) => {
+      useLayoutEffect(() => {
+        window.location.replace('https://ruhrpott.netlify.app');
+      }, [])
+      return (
+      <Card padding={4}>
+        <Text>Returning Home</Text>
+      </Card>
+    )},
+  }
+}
 
 export default defineConfig({
   name: 'default',
@@ -31,8 +51,10 @@ export default defineConfig({
             ]
         })
       ]
-    })
+    }),
+
   ],
+  tools: [returnHomeTool()],
   schema: {
     types: schemaTypes,
   },
