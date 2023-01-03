@@ -59,7 +59,12 @@ export default defineType({
                   relativeOnly: false, // Force only relative links
                   scheme: ['http', 'https', 'mailto', 'tel'],
                 })
-              }
+              },
+              {
+                name: 'isExternal',
+                title: 'Link is External',
+                type: 'boolean'
+              },
             ],
           },
         ],
