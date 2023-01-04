@@ -1,11 +1,18 @@
-# Sanity Blogging Content Studio
+<p align="center">
+  <a href="https://www.metalsmith.io">
+    <img alt="Metalsmith" src="https://www.glinka.co/assets/images/metalsmith-logo-bug.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Ruhrpott
+</h1>
+<p align="center"><i>The Sanity Studio for the Ruhrpott Project</i></p>
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+![Screenshot](https://cdn.sanity.io/images/349a1vg2/production/5f587cb30cc531d7c09bc24d544c5b3e53b9aa92-2600x2096.png?w=1200&h=1200&fit=max&auto=format)
 
-Now you can do the following things:
+Ruhrpott is a proof-of-concept website built to demonstrate the use of structured content in a static website created with the [Metalsmith Static Site Generator](https://metalsmith.io). The [Sanity content management system](https://www.sanity.io/) is a perfect match to achieve this objective.
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- Check out the example frontend: [React/Next.js](https://github.com/sanity-io/tutorial-sanity-blog-react-next)
-- [Read the blog post about this template](https://www.sanity.io/blog/build-your-own-blog-with-sanity-and-next-js?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+This repository contains the Sanity Studio for the Ruhrpott project. The website itself is available at [https://ruhrpott.netlify.app](https://ruhrpott.netlify.app).
+
+
+## Join the Metalsmith community at [Gitter](https://gitter.im/metalsmith/community).
