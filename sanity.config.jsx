@@ -16,7 +16,7 @@ const returnHomeTool = () => {
     icon: FiHome,
     component: (props) => {
       useLayoutEffect(() => {
-        window.location.replace('https://ruhrpott.netlify.app');
+        window.location.href = 'https://ruhrpott.netlify.app';
       }, [])
       return (
       <Card padding={4}>

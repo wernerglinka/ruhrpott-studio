@@ -38,7 +38,7 @@ export const ruhrpottStructure = (S) =>
       ),
       S.divider(),
       // Remove the all singletons and previous defined list items from the main list
-      // at thie point only blog piosts and pages remain to be listed
+      // at this point only blog posts and pages remain to be listed
       ...S.documentTypeListItems().filter(
         (listItem) => !['siteSettings','navigation','authors','cities','footballClubs' ].includes(listItem.getId())
       ),
